@@ -1,0 +1,230 @@
+body {
+    min-height: 2000px;
+}
+.navbar-nav{
+    font-size: 1.2rem;
+} 
+.nav-item a:hover{
+    background-color: #1d51ff6b;
+    color: white;
+    border-radius: 5px;
+}
+
+.jumbotron {
+    background-color: #cfe1fe;
+    text-align: center;
+    padding-top: 10rem;
+}
+
+.jumbotron .rounded-circle {
+    border: 5px solid #52555b;
+    height: auto;
+}  
+.conten{
+    width: 50%;
+}
+.col-lg-6 {
+    width: 40%;
+    margin: 0 auto;
+    padding: 10px 20px;
+    margin-top: 0px;
+}
+.about-text {
+    font-size: 1.1rem;
+    color: #555;
+    text-align: justify;
+    margin-top: 20px;
+    border:#ddeaff solid 1px;
+    border-radius: 10px;
+    background-color: #ddeaff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    padding: 20px 20px 20px 20px;
+}
+
+#projects {
+    background-color: #ffffff;
+    padding-top: 5rem;
+    padding-bottom: 300px;
+    
+}
+#projects .card {
+    background-color: #cfe1fe;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#projects .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}   
+#projects .card img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 200px;
+    object-fit: cover;
+}
+#projects .card-body {
+    padding: 1.5rem;
+}   
+#projects .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}   
+#projects .card-text {
+    font-size: 1rem;
+    color: #555;
+}
+#projects .btn {
+    background-color: #289df0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+}
+#projects .btn:hover {
+    background-color: #1d51ff6b;
+    color: white;
+}   
+
+
+
+
+#contact {
+    background-color: #cfe1fe;
+    padding-top: 99px;
+    padding-bottom: 5rem ;
+    
+}
+
+
+
+.row.justify-content-center .col-md-6 {
+    max-width: 700px;
+    margin: 10px auto;
+    padding: 15px 20px;
+    border:#ffffff solid 1px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #289df0;
+    color: white;
+    padding: 1rem 0;
+}
+
+/*responsive*/
+@media (max-width: 768px) {
+    .container h1 {
+        font-size: 1.5rem;
+    }
+    .jumbotron {
+        padding-top: 5rem;
+    }
+    .jumbotron .rounded-circle {
+        width: 150px;
+        height: auto;
+
+    }
+    .conten {
+        width: 100%;
+    }
+    .col-lg-6 {
+        width: 100%;
+        margin: 0 auto;
+        padding: 10px ;
+        margin-top: 0px;
+
+    }
+    .col-lg-6 h1 {
+        font-size: 1.5rem;
+    }
+    .btn {
+        width: 50px;
+        height: 20px;
+        padding: 0;
+        font-size: 0.8rem;
+
+    }
+    .about-text {
+        width: 90%;
+        font-size: 10px;
+        padding: 15px;
+        border: #ddeaff solid 1px;
+        border-radius: 10px;
+        background-color: #ddeaff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 20px auto;
+        padding: 10px;
+
+
+    }
+    #projects .card img {
+        height: auto;
+        width: 100%;
+    }
+    #projects .card {
+        height: auto;
+        width: 100%;
+        padding: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border: 1px solid #dee2e6;
+    }
+    #projects .card-body {
+        padding: 1rem;
+    }
+    #projects .card-title {
+        font-size: 1.2rem;
+    }
+    #projects .card-text {
+        font-size: 0.9rem;
+    }
+    #projects .btn {
+        height: 30px;
+        width: 80px;
+        font-size: 10px;
+        padding: 0.4rem 0.8rem;
+        text-align: center;
+    }
+    #contact {
+        height: auto;
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 2rem;
+
+    }
+    #contact .row.justify-content-center .col-md-6 {
+        width: 90%;
+        padding: 10px;
+        border: #ffffff solid 1px;
+        border-radius: 10px;
+        background-color: #ffffff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    #contact .row.justify-content-center .col-md-6 h2 {
+        font-size: 1.5rem;
+    }
+    #contact .row.justify-content-center .col-md-6 p {
+        font-size: 0.9rem;
+    }
+    #contact .row.justify-content-center .col-md-6 a {
+        font-size: 0.9rem;
+    }
+    #contact .row.justify-content-center .col-md-6 a:hover {
+        background-color: #1d51ff6b;
+        color: white;
+    }
+    #contact .btn {
+        height: 30px;
+        width: 80px;
+        font-size: 10px;
+    
+    }
+}
+
+

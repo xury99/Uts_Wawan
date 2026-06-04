@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Portfolio | WawanSaputra</title>
+  </head>
+  <body id="home">
+<!-- Navbar -->
+
+<nav class="navbar navbar-expand-lg navbar-dark shadow-ms fixed-top" style="background-color: #289df0;">
+  <div class="container">
+    <a class="navbar-brand" href="#"><h1>PortKU</h1></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link text-white" aria-current="page" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Akhir Navbar -->
+
+
+<!-- JumboTron -->
+
+<div class="jumbotron">
+  <div class="row align-items-center">
+    <div class="conten">
+      <img src="img/poto.png" alt="Foto Profil" class="rounded-circle mb-4 " width="250" height="300">
+        <h1 class="display-4 fw-bold">Wawan Saputra</h1>
+        <p class="lead">Student | Web Developer</p>
+      </div>
+      <div class=" col-lg-6 ">
+        <h1>About Me</h1>
+         <!-- Tombol Bahasa -->
+          <button class="btn btn-primary"
+          onclick="ubahBahasa('id')">
+
+              ID
+
+          </button>
+
+          <button class="btn btn-dark"
+          onclick="ubahBahasa('en')">
+
+              EN
+
+          </button>
+
+        <p class="about-text" id="about-text">Halo, saya adalah seorang pelajar yang sedang menempuh pendidikan S1 di Universitas Hamzanwadi, dan mengambil Program Studi Pendidikan Informatika. Saya memiliki minat di bidang teknologi dan desain digital. Saya senang mempelajari hal-hal baru, terutama tentang pengembangan website, desain interface, multimedia, dan dunia pemrograman.
+
+        Saya memiliki ketertarikan dalam membuat tampilan website yang modern, menarik, dan mudah digunakan. Selain itu, saya juga suka mengeksplorasi dunia editing, live streaming, serta media interaktif untuk meningkatkan kreativitas dan kemampuan saya di bidang digital.
+
+        Saat ini saya terus belajar dan mengembangkan kemampuan dalam HTML, CSS, Bootstrap, serta berbagai tools desain dan multimedia. Saya percaya bahwa proses belajar dan mencoba hal baru adalah langkah penting untuk berkembang menjadi pribadi yang lebih kreatif dan profesional di masa depan.</p>
+      </div>
+    </div>
+  
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,128L30,138.7C60,149,120,171,180,160C240,149,300,107,360,112C420,117,480,171,540,192C600,213,660,203,720,202.7C780,203,840,213,900,192C960,171,1020,117,1080,112C1140,107,1200,149,1260,160C1320,171,1380,149,1410,138.7L1440,128L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path></svg>
+  </div>
+</div>
+<
+<script>
+
+function ubahBahasa(bahasa){
+
+   let text = document.getElementById("about-text");
+
+   if(bahasa == "id"){
+
+      text.innerHTML =
+      "Halo, saya adalah seorang pelajar yang sedang menempuh pendidikan S1 di Universitas Hamzanwadi, dan mengambil Program Studi Pendidikan Informatika. Saya memiliki minat di bidang teknologi dan desain digital. Saya senang mempelajari hal-hal baru, terutama tentang pengembangan website, desain interface, multimedia, dan dunia pemrograman. Saya memiliki ketertarikan dalam membuat tampilan website yang modern, menarik, dan mudah digunakan. Selain itu, saya juga suka mengeksplorasi dunia editing, live streaming, serta media interaktif untuk meningkatkan kreativitas dan kemampuan saya di bidang digital. saat ini saya terus belajar dan mengembangkan kemampuan dalam HTML, CSS, Bootstrap, serta berbagai tools desain dan multimedia. Saya percaya bahwa proses belajar dan mencoba hal baru adalah langkah penting untuk berkembang menjadi pribadi yang lebih kreatif dan profesional di masa depan.";
+
+
+   }
+
+   else if(bahasa == "en"){
+
+      text.innerHTML =
+      "Hello, I am a student currently pursuing a Bachelor's degree at Hamzanwadi University, majoring in Informatics Education. I have an interest in technology and digital design. I enjoy learning new things, especially about website development, interface design, multimedia, and the world of programming. I am interested in creating modern, attractive, and user-friendly website layouts. In addition, I also like to explore the world of editing, live streaming, and interactive media to enhance my creativity and skills in the digital field. Currently, I continue to learn and develop abilities in HTML, CSS, Bootstrap, as well as various design and multimedia tools. I believe that the process of learning and trying new things is an important step to grow into a more creative and professional individual in the future.";
+
+   }
+
+}
+
+</script>
+
+<!-- Akhir JumboTron -->
+
+<!-- Projects -->
+<section id="projects">
+  <div class="container">
+    <div class="row">
+      <div class="col text-center mt-5 mb-5">
+        <h2>My Projects</h2>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <!-- Project cards will go here -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+            <img src="Img/multimedia/multimedia.jpeg" class="card-img-top" alt="poto">
+            <div class="card-body">
+                <h5 class="card-title">Project Multimedia</h5>
+                <p class="card-text">Project ini merupakan hasil dari pengembangan multimedia yang saya kerjakan selama perkuliahan untuk memenuhi tugas akhir dari mata kuliah Multimedia.</p>
+                <a href="#project1" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project1">View Details</a>
+            </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card">
+            <img src="Img/latihan/latihan.png" class="card-img-top" alt="Project 2">
+            <div class="card-body">
+                <h5 class="card-title">Project Website</h5>
+                <p class="card-text">Project ini merupakan hasil dari latihan membuat website sederhana menggunakan HTML, dan CSS pada saat semester awal untuk meningkatkan kemampuan saya.</p>
+                <a href="#project2" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project2">View Details</a>
+            </div>
+            </div>
+        </div>
+         <div class="col-md-4 mb-4">
+            <div class="card">
+            <img src="Img/biodata/biodata1.png" class="card-img-top" alt="Project 3">
+            <div class="card-body">
+                <h5 class="card-title">Project Biodata</h5>
+                <p class="card-text">Project ini hasil dari tugas project membuat biodata diri dalam bentuk website. Dalam project ini, saya belajar bagaimana cara memasukan foto, membuat teks, dan mengatur tata letak halaman web.</p>
+                <a href="#project3" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project3">View Details</a>
+            </div>
+            </div>
+        </div>
+    </div>
+  </div>
+ 
+</section>
+<!-- Akhir Projects -->
+<!-- Modal Project 1 -->
+ <div class="modal fade"
+id="project1"
+tabindex="-1">
+
+  <div class="modal-dialog modal-lg">
+
+    <div class="modal-content">
+
+      <div class="modal-header">
+
+        <h5 class="modal-title">
+          Project Multimedia
+        </h5>
+
+        <button type="button"
+        class="btn-close"
+        data-bs-dismiss="modal">
+        </button>
+
+      </div>
+
+      <div class="modal-body text-center">
+
+        <img src="img/multimedia/multimedia.jpeg"
+         alt="Project Multimedia"
+        class="img-fluid rounded">
+        <img src="img/multimedia/materi.jpeg"
+         alt="Project Multimedia"
+        class="img-fluid rounded">
+        <img src="img/multimedia/definisi.jpeg"
+          alt="Project Multimedia"
+          class="img-fluid rounded">
+        <img src="img/multimedia/komponen.jpeg"
+          alt="Project Multimedia"
+          class="img-fluid rounded">
+        <img src="img/multimedia/quiz.jpeg"
+          alt="Project Multimedia"
+          class="img-fluid rounded">
+        <img src="img/multimedia/isiquiz.jpeg"
+          alt="Project Multimedia"
+          class="img-fluid rounded">
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+<!akhir Modal Project 1 -->
+<!-- Modal Project 2 -->
+ <div class="modal fade"
+id="project2"
+tabindex="-1">
+
+  <div class="modal-dialog modal-lg">
+
+    <div class="modal-content">
+
+      <div class="modal-header">
+
+        <h5 class="modal-title">
+          Project Latihan Website
+        </h5>
+
+        <button type="button"
+        class="btn-close"
+        data-bs-dismiss="modal">
+        </button>
+
+      </div>
+
+      <div class="modal-body text-center">
+
+        <img src="img/latihan/latihan.png"
+         alt="Project Latihan Website"
+        class="img-fluid rounded">
+        <img src="img/latihan/latihan2.png"
+         alt="Project Latihan Website"
+        class="img-fluid rounded">
+        <img src="img/latihan/latihan3.png"
+         alt="Project Latihan Website"
+        class="img-fluid rounded">
+
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+<!-- Akhir Modal Project 2 -->
+<!-- Modal Project 3 -->
+ <div class="modal fade"
+id="project3"
+tabindex="-1">
+
+  <div class="modal-dialog modal-lg">
+
+    <div class="modal-content">
+
+      <div class="modal-header">
+
+        <h5 class="modal-title">
+          Project Biodata
+        </h5>
+
+        <button type="button"
+        class="btn-close"
+        data-bs-dismiss="modal">
+        </button>
+
+      </div>
+
+      <div class="modal-body text-center">
+
+        <img src="img/biodata/biodata1.png"
+         alt="Project Biodata"
+        class="img-fluid rounded">
+         <img src="img/biodata/biodata2.png"
+         alt="Project Biodata"
+        class="img-fluid rounded">
+         <img src="img/biodata/biodata3.png"
+         alt="Project Biodata"
+        class="img-fluid rounded">
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<!-- Contact -->
+<section id="contact">
+  <div class="containerr">
+    <div class="row">
+      <div class="col text-center mb-5">
+        <h2>Contact Me</h2>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Your Name">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Your Email">
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="5" placeholder="Your Message"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+</section>
+<!-- Akhir Contact -->
+ <!-- footer -->
+ <footer class="text-center text-start">
+   <div class="container p-4">
+     <p>Created with ❤️ by <a href="https://www.instagram.com/w4wan_99/" class="text-white fw-bold">@WawanSaputra</a></p>
+   </div>
+ </footer>
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+   
+  </body>
+</html>
